@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Product &amp; Services - SlimBatt LLC</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "outline-variant": "#cfc4c5",
+          "surface-container-high": "#e8e8e8",
+          "primary-container": "#1b1b1b",
+          "surface-container": "#eeeeee",
+          "on-error-container": "#93000a",
+          "surface-tint": "#5e5e5e",
+          "primary-fixed-dim": "#c6c6c6",
+          "inverse-surface": "#2f3131",
+          "on-tertiary-container": "#848484",
+          "outline": "#7e7576",
+          "tertiary-fixed-dim": "#c6c6c6",
+          "secondary-fixed-dim": "#c7c6c6",
+          "primary-fixed": "#e2e2e2",
+          "surface": "#f9f9f9",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#e4e2e2",
+          "on-tertiary-fixed-variant": "#474747",
+          "secondary-container": "#e1dfdf",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#1b1b1b",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-container": "#1b1b1b",
+          "on-primary": "#ffffff",
+          "secondary": "#5e5e5e",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary-container": "#626263",
+          "surface-bright": "#f9f9f9",
+          "surface-container-highest": "#e2e2e2",
+          "tertiary-fixed": "#e2e2e2",
+          "on-primary-container": "#848484",
+          "on-background": "#1a1c1c",
+          "on-secondary": "#ffffff",
+          "primary": "#000000",
+          "background": "#f9f9f9",
+          "on-secondary-fixed-variant": "#464747",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-variant": "#e2e2e2",
+          "inverse-on-surface": "#f0f1f1",
+          "on-surface-variant": "#4c4546",
+          "inverse-primary": "#c6c6c6",
+          "on-secondary-fixed": "#1b1c1c",
+          "tertiary": "#000000",
+          "surface-container-low": "#f3f3f4",
+          "on-surface": "#1a1c1c",
+          "surface-dim": "#dadada",
+          "on-error": "#ffffff"
+        },
+        fontFamily: {
+          "headline-lg": ["Hanken Grotesk"],
+          "body-lg": ["Hanken Grotesk"],
+          "headline-md": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display": ["Hanken Grotesk"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #ffffff; color: #1a1c1c; }
+  .grid-pattern {
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+</style>
+</head>
+<body class="font-body-md text-on-surface bg-surface-container-lowest antialiased selection:bg-blue-600 selection:text-white">
+
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="flex justify-between items-center max-w-6xl mx-auto px-4 md:px-8 h-20">
+<a href="index.html" class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface flex items-center gap-3">
+  <img src="images/logo.png" alt="SlimBatt Logo" class="h-9 sm:h-10 w-auto object-contain">
+  <span>SlimBatt LLC</span>
+</a>
+<nav class="hidden md:flex space-x-6">
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="index.html">Home</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="technology.html">Technology</a>
+  <a class="font-body-sm text-primary font-bold border-b-2 border-primary pb-1" href="product.html">Product</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="commercialization.html">Commercialization</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="team.html">Team</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="milestones.html">Funding &amp; IP</a>
+</nav>
+<a href="contact.html" class="font-body-sm px-4 py-2 bg-primary text-white rounded hover:bg-inverse-surface transition-colors font-medium hidden md:inline-block">Contact Us</a>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-on-surface hover:bg-surface border border-outline-variant flex items-center justify-center">
+  <span id="menu-icon" class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-outline-variant px-4 py-6 shadow-lg">
+  <div class="flex flex-col space-y-3">
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="index.html">
+      <span>Home</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="technology.html">
+      <span>Technology</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-primary font-bold bg-surface p-3 rounded-lg flex items-center justify-between" href="product.html">
+      <span>Product</span>
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="commercialization.html">
+      <span>Commercialization</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="team.html">
+      <span>Team</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="milestones.html">
+      <span>Funding &amp; IP</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="w-full text-center py-3 bg-primary text-white font-bold rounded-lg shadow-sm block mt-2" href="contact.html">
+      Contact Us
+    </a>
+  </div>
+</div>
+</header>
+
+<main class="pt-20">
+<!-- Header Banner -->
+<section class="py-16 grid-pattern border-b border-outline-variant relative">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-2">Hardware &amp; Software Integration</span>
+  <h1 class="text-display font-display text-on-surface text-4xl md:text-5xl font-extrabold mb-4">Product &amp; Services (MVP)</h1>
+  <p class="font-body-lg text-on-surface-variant max-w-3xl text-lg">
+    A complete battery management system device delivering high-precision state estimation with reduced onboard sensors.
+  </p>
+</div>
+</section>
+
+<!-- MVP Architecture Section -->
+<section class="py-16 bg-white border-b border-outline-variant">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <div class="mb-12">
+    <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Minimum Viable Product (MVP)</h2>
+    <p class="font-body-md text-on-surface-variant mt-4 max-w-3xl">
+      SlimBatt will provide a complete battery management system device with both hardware and software. The MVP integrates our microcontroller and embedded proprietary estimation algorithms:
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <!-- SoC -->
+    <div class="bg-white border border-outline-variant p-8 rounded-xl shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 border border-outline-variant">
+          <span class="material-symbols-outlined text-primary text-2xl">analytics</span>
+        </div>
+        <span class="text-xs font-bold text-primary uppercase tracking-wider block mb-1">State Metric 01</span>
+        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">State of Charge</h3>
+        <p class="text-sm font-semibold text-primary mb-4">(SoC)</p>
+        <p class="font-body-sm text-on-surface-variant">
+          Accurate real-time charge estimation across all cells derived from the average model, eliminating individual sensor dependency.
+        </p>
+      </div>
+    </div>
+
+    <!-- SoH -->
+    <div class="bg-white border border-outline-variant p-8 rounded-xl shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 border border-outline-variant">
+          <span class="material-symbols-outlined text-primary text-2xl">health_and_safety</span>
+        </div>
+        <span class="text-xs font-bold text-primary uppercase tracking-wider block mb-1">State Metric 02</span>
+        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">State of Health</h3>
+        <p class="text-sm font-semibold text-primary mb-4">(SoH)</p>
+        <p class="font-body-sm text-on-surface-variant">
+          Monitors cell aging, internal degradation, and health status over the operational lifecycle of the battery pack.
+        </p>
+      </div>
+    </div>
+
+    <!-- SoP -->
+    <div class="bg-white border border-outline-variant p-8 rounded-xl shadow-sm hover:border-primary transition-colors flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-6 border border-outline-variant">
+          <span class="material-symbols-outlined text-primary text-2xl">bolt</span>
+        </div>
+        <span class="text-xs font-bold text-primary uppercase tracking-wider block mb-1">State Metric 03</span>
+        <h3 class="text-headline-md font-headline-md text-on-surface mb-2">State of Power</h3>
+        <p class="text-sm font-semibold text-primary mb-4">(SoP)</p>
+        <p class="font-body-sm text-on-surface-variant">
+          Calculates peak charging and discharging power capabilities in real time for safe, high-performance vehicle operation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Advantages Card -->
+  <div class="bg-surface border border-outline-variant rounded-xl p-8 shadow-sm">
+    <h3 class="text-headline-md font-headline-md text-on-surface mb-4">Core Product Advantages</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-body-md text-on-surface-variant">
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-600 text-xl shrink-0 mt-0.5">check_circle</span>
+        <span><strong>Reduced Sensor Count:</strong> Fewer voltage sensors reduce bill-of-materials and physical failure points across cell strings.</span>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-600 text-xl shrink-0 mt-0.5">check_circle</span>
+        <span><strong>Software Simplicity:</strong> Lean algorithmic design lowers MCU compute requirements and simplifies software maintenance.</span>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-600 text-xl shrink-0 mt-0.5">check_circle</span>
+        <span><strong>Uncompromised Accuracy:</strong> Retains the same SoC estimation accuracy while operating with significantly fewer sensors.</span>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-blue-600 text-xl shrink-0 mt-0.5">check_circle</span>
+        <span><strong>Cost Effectiveness:</strong> Simultaneous hardware and software reduction makes SlimBatt significantly more cost-effective.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Delivery & Engagement Models -->
+<section class="py-16 bg-surface">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <div class="mb-12">
+    <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Product &amp; Service Delivery Options</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-white border border-outline-variant p-8 rounded-xl shadow-sm">
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-3">Standalone BMS Device</h3>
+      <p class="font-body-md text-on-surface-variant mb-4">
+        Supplied as a fully assembled and programmed microcontroller unit with integrated firmware, ready for direct installation in battery packs.
+      </p>
+      <ul class="space-y-2 text-xs font-semibold text-on-surface border-l-2 border-primary/20 pl-3">
+        <li>• Complete hardware MCU architecture</li>
+        <li>• Pre-configured SoC, SoH, and SoP algorithms</li>
+        <li>• Plug-and-play validation support</li>
+      </ul>
+    </div>
+
+    <div class="bg-white border border-outline-variant p-8 rounded-xl shadow-sm">
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-3">Algorithm &amp; IP Licensing</h3>
+      <p class="font-body-md text-on-surface-variant mb-4">
+        Offered to OEMs and Tier 1 suppliers who design custom BMS hardware in-house and wish to incorporate our sensor-lean algorithms into their proprietary ECUs.
+      </p>
+      <ul class="space-y-2 text-xs font-semibold text-on-surface border-l-2 border-primary/20 pl-3">
+        <li>• Core algorithm implementation licensing</li>
+        <li>• Support for proprietary microcontroller platforms</li>
+        <li>• Comprehensive state estimation model customization</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+  <div class="flex items-center gap-3">
+    <img src="images/logo.png" alt="SlimBatt Logo" class="h-8 w-auto object-contain">
+    <div>
+      <div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
+      <div class="text-xs text-on-surface-variant">Sensor-Lean BMS Technology</div>
+    </div>
+  </div>
+  <div class="font-body-sm text-on-surface-variant text-center md:text-right">
+    © SlimBatt LLC. All rights reserved.<br>Contact: <a href="mailto:jchenee2015@gmail.com" class="underline">jchenee2015@gmail.com</a>
+  </div>
+</div>
+</footer>
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.textContent = 'close';
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.textContent = 'menu';
+      }
+    });
+  }
+</script>
+</body>
+</html>
