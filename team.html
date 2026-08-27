@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Leadership Team - SlimBatt LLC</title>
+<link rel="icon" type="image/png" href="images/logo.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -87,7 +88,10 @@
 <!-- Navigation -->
 <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-outline-variant shadow-sm">
 <div class="flex justify-between items-center max-w-6xl mx-auto px-4 md:px-8 h-20">
-<a href="index.html" class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface">SlimBatt LLC</a>
+<a href="index.html" class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface flex items-center gap-3">
+  <img src="images/logo.png" alt="SlimBatt Logo" class="h-9 sm:h-10 w-auto object-contain">
+  <span>SlimBatt LLC</span>
+</a>
 <nav class="hidden md:flex space-x-6">
   <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="index.html">Home</a>
   <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="technology.html">Technology</a>
@@ -157,11 +161,11 @@
     <!-- Jun Chen -->
     <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between hover:border-primary transition-colors">
       <div>
-        <div class="w-20 h-20 bg-surface rounded-full mb-6 border border-outline-variant flex items-center justify-center">
-          <span class="text-2xl font-bold text-primary">JC</span>
+        <div class="w-28 h-28 mb-6 overflow-hidden rounded-full border-2 border-outline-variant shadow-md bg-surface flex-shrink-0">
+          <img src="images/junchen.png" alt="Jun Chen" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300">
         </div>
         <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Jun Chen</h3>
-        <p class="text-xs font-bold tracking-wider text-primary uppercase mt-1 mb-4">Technical Lead</p>
+        <p class="text-xs font-bold tracking-wider text-blue-600 uppercase mt-1 mb-4">CEO</p>
         <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">
           Associate professor at Oakland University with extensive experience in automotive industry, national lab, and academia.
         </p>
@@ -174,11 +178,11 @@
     <!-- Luke Nuculaj -->
     <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between hover:border-primary transition-colors">
       <div>
-        <div class="w-20 h-20 bg-surface rounded-full mb-6 border border-outline-variant flex items-center justify-center">
-          <span class="text-2xl font-bold text-primary">LN</span>
+        <div class="w-28 h-28 mb-6 overflow-hidden rounded-full border-2 border-outline-variant shadow-md bg-surface flex-shrink-0">
+          <img src="images/luke.png" alt="Luke Nuculaj" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300">
         </div>
         <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Luke Nuculaj</h3>
-        <p class="text-xs font-bold tracking-wider text-primary uppercase mt-1 mb-4">Business Co-Lead</p>
+        <p class="text-xs font-bold tracking-wider text-blue-600 uppercase mt-1 mb-4">CTO</p>
         <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">
           PhD student at Oakland University, with research focusing on state estimation, Kalman filter, and battery management systems.
         </p>
@@ -191,11 +195,11 @@
     <!-- Ali Irshayyid -->
     <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between hover:border-primary transition-colors">
       <div>
-        <div class="w-20 h-20 bg-surface rounded-full mb-6 border border-outline-variant flex items-center justify-center">
-          <span class="text-2xl font-bold text-primary">AI</span>
+        <div class="w-28 h-28 mb-6 overflow-hidden rounded-full border-2 border-outline-variant shadow-md bg-surface flex-shrink-0">
+          <img src="images/ali.png" alt="Ali Irshayyid" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300">
         </div>
         <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Ali Irshayyid</h3>
-        <p class="text-xs font-bold tracking-wider text-primary uppercase mt-1 mb-4">Business Co-Lead</p>
+        <p class="text-xs font-bold tracking-wider text-blue-600 uppercase mt-1 mb-4">CTO</p>
         <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">
           Postdoc researcher at Oakland University, with research focusing on state AI, LLM, and battery management systems.
         </p>
@@ -220,9 +224,12 @@
 <!-- Footer -->
 <footer class="w-full py-12 bg-surface-container-low border-t border-outline-variant">
 <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-  <div>
-    <div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
-    <div class="text-xs text-on-surface-variant">Sensor-Lean BMS Technology</div>
+  <div class="flex items-center gap-3">
+    <img src="images/logo.png" alt="SlimBatt Logo" class="h-8 w-auto object-contain">
+    <div>
+      <div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
+      <div class="text-xs text-on-surface-variant">Sensor-Lean BMS Technology</div>
+    </div>
   </div>
   <div class="font-body-sm text-on-surface-variant text-center md:text-right">
     © SlimBatt LLC. All rights reserved.<br>Contact: <a href="mailto:jchenee2015@gmail.com" class="underline">jchenee2015@gmail.com</a>
