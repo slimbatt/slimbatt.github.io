@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Technology - SlimBatt LLC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "outline-variant": "#cfc4c5",
+          "surface-container-high": "#e8e8e8",
+          "primary-container": "#1b1b1b",
+          "surface-container": "#eeeeee",
+          "on-error-container": "#93000a",
+          "surface-tint": "#5e5e5e",
+          "primary-fixed-dim": "#c6c6c6",
+          "inverse-surface": "#2f3131",
+          "on-tertiary-container": "#848484",
+          "outline": "#7e7576",
+          "tertiary-fixed-dim": "#c6c6c6",
+          "secondary-fixed-dim": "#c7c6c6",
+          "primary-fixed": "#e2e2e2",
+          "surface": "#f9f9f9",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#e4e2e2",
+          "on-tertiary-fixed-variant": "#474747",
+          "secondary-container": "#e1dfdf",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#1b1b1b",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-container": "#1b1b1b",
+          "on-primary": "#ffffff",
+          "secondary": "#5e5e5e",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary-container": "#626263",
+          "surface-bright": "#f9f9f9",
+          "surface-container-highest": "#e2e2e2",
+          "tertiary-fixed": "#e2e2e2",
+          "on-primary-container": "#848484",
+          "on-background": "#1a1c1c",
+          "on-secondary": "#ffffff",
+          "primary": "#000000",
+          "background": "#f9f9f9",
+          "on-secondary-fixed-variant": "#464747",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-variant": "#e2e2e2",
+          "inverse-on-surface": "#f0f1f1",
+          "on-surface-variant": "#4c4546",
+          "inverse-primary": "#c6c6c6",
+          "on-secondary-fixed": "#1b1c1c",
+          "tertiary": "#000000",
+          "surface-container-low": "#f3f3f4",
+          "on-surface": "#1a1c1c",
+          "surface-dim": "#dadada",
+          "on-error": "#ffffff"
+        },
+        fontFamily: {
+          "headline-lg": ["Hanken Grotesk"],
+          "body-lg": ["Hanken Grotesk"],
+          "headline-md": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display": ["Hanken Grotesk"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #ffffff; color: #1a1c1c; }
+  .grid-pattern {
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+  .timeline-line {
+    width: 2px;
+    background: linear-gradient(to bottom, #2563eb 0%, #cfc4c5 100%);
+  }
+</style>
+</head>
+<body class="font-body-md text-on-surface bg-surface-container-lowest antialiased selection:bg-blue-600 selection:text-white">
+
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="flex justify-between items-center max-w-6xl mx-auto px-4 md:px-8 h-20">
+<a href="index.html" class="font-headline-lg text-headline-lg font-bold text-on-surface">SlimBatt LLC</a>
+<nav class="hidden md:flex space-x-6">
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="index.html">Home</a>
+  <a class="font-body-sm text-primary font-bold border-b-2 border-primary pb-1" href="technology.html">Technology</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="product.html">Product</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="commercialization.html">Commercialization</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="team.html">Team</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="milestones.html">Funding &amp; IP</a>
+</nav>
+<a href="contact.html" class="font-body-sm px-4 py-2 bg-primary text-white rounded hover:bg-inverse-surface transition-colors font-medium hidden md:inline-block">Contact Us</a>
+</div>
+</header>
+
+<main class="pt-20">
+<!-- Header Banner -->
+<section class="py-16 grid-pattern border-b border-outline-variant relative">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-2">Technical Overview</span>
+  <h1 class="text-display font-display text-on-surface text-4xl md:text-5xl font-extrabold mb-4">Core Technology &amp; Roadmap</h1>
+  <p class="font-body-lg text-on-surface-variant max-w-3xl text-lg">
+    Reimagining battery management systems by simultaneously tackling hardware sensor reduction and algorithmic complexity reduction.
+  </p>
+</div>
+</section>
+
+<!-- Problem vs Solution Section -->
+<section class="py-16 bg-white border-b border-outline-variant" id="problem-solution">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+<div class="mb-12">
+  <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">The Problem &amp; Our Solution</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- The Problem -->
+<div class="bg-surface border border-outline-variant rounded-xl p-8 relative overflow-hidden group shadow-sm bg-error-container/10">
+  <div class="flex items-center gap-4 mb-6 relative z-10">
+    <span class="material-symbols-outlined text-error text-3xl">warning</span>
+    <h3 class="text-headline-md font-headline-md text-on-surface">The Problem</h3>
+  </div>
+  <ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
+    <li class="flex items-start gap-3">
+      <span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
+      <span>Relying on onboard voltage sensors for every cell decreases BMS reliability when sensors fail and increases computational load.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
+      <span>Existing literature typically reduces either hardware complexity (fewer sensors) or software complexity (simpler code), but rarely addresses both together.</span>
+    </li>
+  </ul>
+</div>
+<!-- Our Solution -->
+<div class="bg-white border-2 border-primary/30 rounded-xl p-8 relative overflow-hidden group shadow-md bg-blue-50">
+  <div class="flex items-center gap-4 mb-6 relative z-10">
+    <span class="material-symbols-outlined text-3xl text-blue-600">memory</span>
+    <h3 class="text-headline-md font-headline-md text-on-surface">Our Solution</h3>
+  </div>
+  <ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
+    <li class="flex items-start gap-3">
+      <span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
+      <span class="text-on-surface font-medium">Reimagines the entire battery pack as a single "average" model, performs state estimation over this average model, and then distributes this estimation to each single cell.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
+      <span class="text-on-surface font-medium">Focuses on both sensor reduction and algorithm complexity reduction, reducing software development/maintenance and increasing reliability when sensors fail.</span>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Deep Dive: Average Model Architecture -->
+<section class="py-16 bg-surface border-b border-outline-variant">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <div class="mb-12">
+    <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Average Model &amp; State Distribution</h2>
+    <p class="font-body-md text-on-surface-variant mt-4 max-w-3xl">
+      Our breakthrough method bypasses the requirement of measuring every single cell in real time.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white border border-outline-variant p-6 rounded-xl shadow-sm">
+      <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant font-bold text-primary">1</div>
+      <h4 class="font-headline-md text-on-surface mb-2">Sensor Reduction</h4>
+      <p class="font-body-sm text-on-surface-variant">Reduces dependency on physical onboard voltage sensors, removing single points of failure across the battery pack.</p>
+    </div>
+    <div class="bg-white border border-outline-variant p-6 rounded-xl shadow-sm">
+      <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant font-bold text-primary">2</div>
+      <h4 class="font-headline-md text-on-surface mb-2">Average Pack Modeling</h4>
+      <p class="font-body-sm text-on-surface-variant">Runs efficient state estimation algorithms across the pack-level average model, drastically lowering computational footprint.</p>
+    </div>
+    <div class="bg-white border border-outline-variant p-6 rounded-xl shadow-sm">
+      <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant font-bold text-primary">3</div>
+      <h4 class="font-headline-md text-on-surface mb-2">Cell-Level Distribution</h4>
+      <p class="font-body-sm text-on-surface-variant">Mathematically distributes the average estimation to individual cells, retaining state accuracy while cutting complexity.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Technology Readiness & Roadmap Section -->
+<section class="py-16 bg-white" id="roadmap">
+<div class="max-w-6xl mx-auto px-4 md:px-8">
+  <div class="mb-12">
+    <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Technology Readiness Level (TRL) &amp; Roadmap</h2>
+    <p class="font-body-md text-on-surface-variant mt-4">Current readiness level and industrial prototyping milestones.</p>
+  </div>
+
+  <div class="relative pl-8 md:pl-0">
+    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2"></div>
+    <div class="md:hidden absolute left-3 top-0 bottom-0 timeline-line"></div>
+    <div class="space-y-12">
+      <!-- TRL 3 -->
+      <div class="relative flex flex-col md:flex-row items-center justify-between group">
+        <div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 z-10 md:-translate-x-1/2 shadow-sm border-blue-600"></div>
+        <div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8 mb-4 md:mb-0">
+          <h4 class="text-xs font-bold tracking-wider uppercase mb-1 text-blue-600">Current Phase</h4>
+          <h3 class="text-2xl font-bold text-on-surface mb-2">TRL 3: Lab-Scale Prototype</h3>
+          <p class="font-body-sm text-on-surface-variant">Working low-voltage prototype (~15V) with validated state estimation algorithms. Software enhancements underway over the next few months.</p>
+        </div>
+        <div class="w-full md:w-5/12 pl-0 md:pl-8">
+          <div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap shadow-sm">
+            <span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">~15V Lab Prototype</span>
+            <span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">Validated Algorithms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRL 4 -->
+      <div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
+        <div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-outline-variant z-10 md:-translate-x-1/2 group-hover:border-primary transition-colors"></div>
+        <div class="w-full md:w-5/12 text-left pl-0 md:pl-8 mb-4 md:mb-0">
+          <h4 class="text-xs font-bold tracking-wider text-on-surface-variant uppercase mb-1">Next Milestone (1–2 Years)</h4>
+          <h3 class="text-2xl font-bold text-on-surface mb-2">TRL 4: Industrial Prototyping</h3>
+          <p class="font-body-sm text-on-surface-variant">Collaborating with industrial partners to prototype and demonstrate at industrial scale (~150V in EV battery packs), targeting a complete industrial prototype in 2–3 years.</p>
+        </div>
+        <div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8">
+          <div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap justify-start md:justify-end shadow-sm">
+            <span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">~150V EV Board</span>
+            <span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">Industrial Validation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+  <div>
+    <div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
+    <div class="text-xs text-on-surface-variant">Sensor-Lean BMS Technology</div>
+  </div>
+  <div class="flex flex-wrap gap-6 justify-center">
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="index.html">Home</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="product.html">Product</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="commercialization.html">Commercialization</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="team.html">Team</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="milestones.html">Funding &amp; IP</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="contact.html">Contact</a>
+  </div>
+  <div class="font-body-sm text-on-surface-variant text-center md:text-right">
+    © SlimBatt LLC. All rights reserved.
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

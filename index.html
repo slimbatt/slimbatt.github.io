@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en" style=""><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>SlimBatt LLC - Sensor-Lean BMS Technology</title>
@@ -10,503 +12,235 @@
     darkMode: "class",
     theme: {
       extend: {
-        "colors": {
-                "outline-variant": "#cfc4c5",
-                "surface-container-high": "#e8e8e8",
-                "primary-container": "#1b1b1b",
-                "surface-container": "#eeeeee",
-                "on-error-container": "#93000a",
-                "surface-tint": "#5e5e5e",
-                "primary-fixed-dim": "#c6c6c6",
-                "inverse-surface": "#2f3131",
-                "on-tertiary-container": "#848484",
-                "outline": "#7e7576",
-                "tertiary-fixed-dim": "#c6c6c6",
-                "secondary-fixed-dim": "#c7c6c6",
-                "primary-fixed": "#e2e2e2",
-                "surface": "#f9f9f9",
-                "on-tertiary": "#ffffff",
-                "secondary-fixed": "#e4e2e2",
-                "on-tertiary-fixed-variant": "#474747",
-                "secondary-container": "#e1dfdf",
-                "error-container": "#ffdad6",
-                "on-tertiary-fixed": "#1b1b1b",
-                "error": "#ba1a1a",
-                "surface-container-lowest": "#ffffff",
-                "tertiary-container": "#1b1b1b",
-                "on-primary": "#ffffff",
-                "secondary": "#5e5e5e",
-                "on-primary-fixed-variant": "#474747",
-                "on-secondary-container": "#626263",
-                "surface-bright": "#f9f9f9",
-                "surface-container-highest": "#e2e2e2",
-                "tertiary-fixed": "#e2e2e2",
-                "on-primary-container": "#848484",
-                "on-background": "#1a1c1c",
-                "on-secondary": "#ffffff",
-                "primary": "#000000",
-                "background": "#f9f9f9",
-                "on-secondary-fixed-variant": "#464747",
-                "on-primary-fixed": "#1b1b1b",
-                "surface-variant": "#e2e2e2",
-                "inverse-on-surface": "#f0f1f1",
-                "on-surface-variant": "#4c4546",
-                "inverse-primary": "#c6c6c6",
-                "on-secondary-fixed": "#1b1c1c",
-                "tertiary": "#000000",
-                "surface-container-low": "#f3f3f4",
-                "on-surface": "#1a1c1c",
-                "surface-dim": "#dadada",
-                "on-error": "#ffffff"
+        colors: {
+          "outline-variant": "#cfc4c5",
+          "surface-container-high": "#e8e8e8",
+          "primary-container": "#1b1b1b",
+          "surface-container": "#eeeeee",
+          "on-error-container": "#93000a",
+          "surface-tint": "#5e5e5e",
+          "primary-fixed-dim": "#c6c6c6",
+          "inverse-surface": "#2f3131",
+          "on-tertiary-container": "#848484",
+          "outline": "#7e7576",
+          "tertiary-fixed-dim": "#c6c6c6",
+          "secondary-fixed-dim": "#c7c6c6",
+          "primary-fixed": "#e2e2e2",
+          "surface": "#f9f9f9",
+          "on-tertiary": "#ffffff",
+          "secondary-fixed": "#e4e2e2",
+          "on-tertiary-fixed-variant": "#474747",
+          "secondary-container": "#e1dfdf",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#1b1b1b",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-container": "#1b1b1b",
+          "on-primary": "#ffffff",
+          "secondary": "#5e5e5e",
+          "on-primary-fixed-variant": "#474747",
+          "on-secondary-container": "#626263",
+          "surface-bright": "#f9f9f9",
+          "surface-container-highest": "#e2e2e2",
+          "tertiary-fixed": "#e2e2e2",
+          "on-primary-container": "#848484",
+          "on-background": "#1a1c1c",
+          "on-secondary": "#ffffff",
+          "primary": "#000000",
+          "background": "#f9f9f9",
+          "on-secondary-fixed-variant": "#464747",
+          "on-primary-fixed": "#1b1b1b",
+          "surface-variant": "#e2e2e2",
+          "inverse-on-surface": "#f0f1f1",
+          "on-surface-variant": "#4c4546",
+          "inverse-primary": "#c6c6c6",
+          "on-secondary-fixed": "#1b1c1c",
+          "tertiary": "#000000",
+          "surface-container-low": "#f3f3f4",
+          "on-surface": "#1a1c1c",
+          "surface-dim": "#dadada",
+          "on-error": "#ffffff"
         },
-        "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
-        },
-        "spacing": {
-                "section-gap": "12rem",
-                "unit": "8px",
-                "xl": "8rem",
-                "sm": "1rem",
-                "xs": "0.5rem",
-                "md": "2rem",
-                "lg": "4rem"
-        },
-        "fontFamily": {
-                "headline-lg": [
-                        "Hanken Grotesk"
-                ],
-                "body-lg": [
-                        "Hanken Grotesk"
-                ],
-                "headline-md": [
-                        "Hanken Grotesk"
-                ],
-                "body-md": [
-                        "Hanken Grotesk"
-                ],
-                "headline-lg-mobile": [
-                        "Hanken Grotesk"
-                ],
-                "label-sm": [
-                        "Hanken Grotesk"
-                ],
-                "display": [
-                        "Hanken Grotesk"
-                ]
-        },
-        "fontSize": {
-                "headline-lg": [
-                        "32px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "body-lg": [
-                        "18px",
-                        {
-                                "lineHeight": "1.6",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-md": [
-                        "20px",
-                        {
-                                "lineHeight": "1.4",
-                                "fontWeight": "600"
-                        }
-                ],
-                "body-md": [
-                        "16px",
-                        {
-                                "lineHeight": "1.6",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "24px",
-                        {
-                                "lineHeight": "1.2",
-                                "letterSpacing": "-0.01em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "label-sm": [
-                        "13px",
-                        {
-                                "lineHeight": "1",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "display": [
-                        "48px",
-                        {
-                                "lineHeight": "1.1",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "800"
-                        }
-                ]
+        fontFamily: {
+          "headline-lg": ["Hanken Grotesk"],
+          "body-lg": ["Hanken Grotesk"],
+          "headline-md": ["Hanken Grotesk"],
+          "body-md": ["Hanken Grotesk"],
+          "display": ["Hanken Grotesk"]
         }
-},
-    },
+      }
+    }
   }
 </script>
 <style>
-        body {
-            background-color: #ffffff;
-            color: #1a1c1c;
-        }
-        
-        .grid-pattern {
-            background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
-                              linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
-            background-size: 40px 40px;
-            background-position: center center;
-        }
-
-        .card-gradient {
-            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
-        }
-        
-        .timeline-line {
-            width: 2px;
-            background: linear-gradient(to bottom, #2563eb 0%, #cfc4c5 100%);
-        }
-    </style>
+  body { background-color: #ffffff; color: #1a1c1c; }
+  .grid-pattern {
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center center;
+  }
+</style>
 </head>
 <body class="font-body-md text-on-surface bg-surface-container-lowest antialiased selection:bg-blue-600 selection:text-white">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300 ease-in-out">
+
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all">
 <div class="flex justify-between items-center max-w-6xl mx-auto px-4 md:px-8 h-20">
-<div class="font-headline-lg text-headline-lg font-bold text-on-surface">SlimBatt LLC</div>
-<nav class="hidden md:flex space-x-8">
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all font-semibold" href="#problem">Technology</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all font-semibold" href="#roadmap">Status</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all font-semibold" href="#product">Product</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all font-semibold" href="#market">Commercialization</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-all font-semibold" href="#team">Team</a>
+<a href="index.html" class="font-headline-lg text-headline-lg font-bold text-on-surface flex items-center gap-2">
+  SlimBatt LLC
+</a>
+<nav class="hidden md:flex space-x-6">
+  <a class="font-body-sm text-primary font-bold border-b-2 border-primary pb-1" href="index.html">Home</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="technology.html">Technology</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="product.html">Product</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="commercialization.html">Commercialization</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="team.html">Team</a>
+  <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="milestones.html">Funding &amp; IP</a>
 </nav>
-<button class="font-body-sm text-body-sm px-4 py-2 bg-primary text-white rounded hover:bg-inverse-surface transition-colors font-medium hidden md:block">Contact Us</button>
+<a href="contact.html" class="font-body-sm px-4 py-2 bg-primary text-white rounded hover:bg-inverse-surface transition-colors font-medium hidden md:inline-block">Contact Us</a>
 </div>
 </header>
+
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative min-h-[700px] flex items-center grid-pattern overflow-hidden">
+<section class="relative min-h-[620px] flex items-center grid-pattern overflow-hidden py-16">
 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-container-lowest"></div>
 <div class="max-w-6xl mx-auto px-4 md:px-8 w-full relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-<div class="md:col-span-8 flex flex-col gap-6">
+<div class="md:col-span-10 flex flex-col gap-6">
 
-<h1 class="text-display font-display text-on-surface leading-tight">
-                        Sensor-Lean <br>
-<span class="text-primary">BMS Technology</span>
+<div class="inline-block px-3 py-1 bg-surface border border-outline-variant text-primary text-xs font-bold uppercase tracking-wider rounded-full w-fit">
+  Next-Generation BMS Innovation
+</div>
+
+<h1 class="text-display font-display text-on-surface leading-tight text-4xl md:text-5xl font-extrabold">
+    Sensor-Lean <br>
+    <span class="text-primary">BMS Technology</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                        Electric vehicle battery management systems rely heavily on onboard voltage sensors, creating reliability concerns when sensors fail. SlimBatt reduces dependency on onboard sensors by combining hardware sensor reduction with simplified state estimation algorithms—retaining accuracy while cutting complexity.
-                    </p>
-<div class="flex gap-4 mt-4">
-<button class="px-6 py-3 text-white font-body-sm rounded font-semibold hover:bg-inverse-surface transition-colors shadow-sm bg-blue-600">Explore the Tech</button>
+
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl text-lg leading-relaxed">
+    Electric vehicle battery management systems heavily rely on onboard voltage sensors, creating reliability concerns when sensors fail. SlimBatt reduces dependency on onboard sensors by combining hardware sensor reduction with simplified state estimation algorithms—retaining accuracy while cutting complexity.
+</p>
+
+<div class="flex flex-wrap gap-4 mt-2">
+  <a href="technology.html" class="px-6 py-3 text-white font-body-sm rounded font-semibold hover:bg-inverse-surface transition-colors shadow-sm bg-blue-600">Explore Technology</a>
+  <a href="milestones.html" class="px-6 py-3 text-on-surface bg-white border border-outline-variant rounded font-semibold hover:bg-surface transition-colors shadow-sm font-body-sm">Funding &amp; Milestones</a>
 </div>
-</div>
-</div>
-</section>
-<!-- Problem vs Solution Section -->
-<section class="py-xl relative grid-pattern border-t border-outline-variant" id="problem">
-<div class="absolute inset-0 bg-surface-container-lowest/90"></div>
-<div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-<div class="text-center mb-16">
-<h2 class="text-headline-lg font-headline-lg text-on-surface">The Problem &amp; Our Solution</h2>
-<p class="font-body-md text-on-surface-variant mt-4 max-w-2xl mx-auto">Addressing hardware complexity with intelligent, algorithm-driven estimation.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- The Problem -->
-<div class="bg-surface border border-outline-variant rounded-xl p-8 relative overflow-hidden group shadow-sm bg-error-container/10">
-<div class="absolute top-0 right-0 w-32 h-32 bg-error-container/20 rounded-bl-full transition-transform group-hover:scale-110"></div>
-<div class="flex items-center gap-4 mb-6 relative z-10">
-<span class="material-symbols-outlined text-error text-3xl">warning</span>
-<h3 class="text-headline-md font-headline-md text-on-surface">The Problem</h3>
-</div>
-<ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
-<span class="">Relying on onboard voltage sensors for every cell decreases BMS reliability when sensors fail and increases computational load.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
-<span class="">Existing literature typically reduces either hardware complexity or software complexity, but rarely addresses both together.</span>
-</li>
-</ul>
-</div>
-<!-- Our Solution -->
-<div class="bg-white border-2 border-primary/30 rounded-xl p-8 relative overflow-hidden group shadow-md bg-blue-50">
-<div class="absolute top-0 right-0 w-32 h-32 bg-surface-container-low rounded-bl-full transition-transform group-hover:scale-110"></div>
-<div class="flex items-center gap-4 mb-6 relative z-10">
-<span class="material-symbols-outlined text-3xl text-blue-600">memory</span>
-<h3 class="text-headline-md font-headline-md text-on-surface">Our Solution</h3>
-</div>
-<ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
-<span class="text-on-surface font-medium">Reimagines the entire battery pack as a single "average" model, estimates state over the average model, and distributes the estimate to each cell.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
-<span class="text-on-surface font-medium">Simultaneously reduces sensor count and algorithm complexity, increasing fault tolerance and reducing development overhead.</span>
-</li>
-</ul>
-</div>
+
 </div>
 </div>
 </section>
-<!-- Product Section -->
-<section class="py-xl relative border-t border-outline-variant bg-surface" id="product">
+
+<!-- Executive Summary Overview Grid -->
+<section class="py-16 border-t border-outline-variant bg-surface">
 <div class="max-w-6xl mx-auto px-4 md:px-8">
-<div class="mb-12 text-center md:text-left">
-<h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Product &amp; Service (MVP)</h2>
-</div>
-<div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl">
-<p class="font-body-md text-on-surface-variant mb-6">SlimBatt provides a complete battery management system device integrating hardware and software. Our Minimum Viable Product (MVP) includes a microcontroller unit with embedded algorithms for:</p>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-  <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm flex flex-col items-center text-center group hover:border-primary transition-colors">
-    <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4">
-      <span class="material-symbols-outlined text-2xl text-blue-600">analytics</span>
-    </div>
-    <h4 class="font-headline-md text-on-surface mb-2">State of Charge</h4>
-    <p class="text-sm text-on-surface-variant font-medium">(SoC)</p>
-  </div>
-  <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm flex flex-col items-center text-center group hover:border-primary transition-colors">
-    <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4">
-      <span class="material-symbols-outlined text-2xl text-blue-600">health_and_safety</span>
-    </div>
-    <h4 class="font-headline-md text-on-surface mb-2">State of Health</h4>
-    <p class="text-sm text-on-surface-variant font-medium">(SoH)</p>
-  </div>
-  <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm flex flex-col items-center text-center group hover:border-primary transition-colors">
-    <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4">
-      <span class="material-symbols-outlined text-2xl text-blue-600">bolt</span>
-    </div>
-    <h4 class="font-headline-md text-on-surface mb-2">State of Power</h4>
-    <p class="text-sm text-on-surface-variant font-medium">(SoP)</p>
-  </div>
-</div>
-<p class="font-body-md text-on-surface-variant mt-6">Our technology reduces the required number of onboard sensors without compromising BMS functionality, delivering higher reliability and cost-effectiveness.</p>
-</div>
-</div>
-</section><section class="py-xl relative border-t border-outline-variant bg-surface" id="roadmap"><div class="max-w-6xl mx-auto px-4 md:px-8"><div class="mb-12 text-center md:text-left"><h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Technology Readiness &amp; Roadmap</h2><p class="font-body-md text-on-surface-variant mt-4">Structured pathway from working lab prototype to full industrial validation.</p></div><div class="relative pl-8 md:pl-0"><div class="hidden md:block absolute left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2"></div><div class="md:hidden absolute left-3 top-0 bottom-0 timeline-line"></div><div class="space-y-12"><div class="relative flex flex-col md:flex-row items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 z-10 md:-translate-x-1/2 shadow-sm border-blue-600"></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider uppercase mb-1 text-blue-600">Current Phase</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 3: Lab-Scale Prototype</h3><p class="font-body-sm text-on-surface-variant">Working low-voltage prototype (~15V) with validated state estimation algorithms. Software enhancements underway over the next few months.</p></div><div class="w-full md:w-5/12 pl-0 md:pl-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">~15V Lab Prototype</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">Validated Algorithms</span></div></div></div><div class="relative flex flex-col md:flex-row-reverse items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-outline-variant z-10 md:-translate-x-1/2 group-hover:border-primary transition-colors"></div><div class="w-full md:w-5/12 text-left pl-0 md:pl-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider text-on-surface-variant uppercase mb-1">Next Milestone (1–2 Years)</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 4: Industrial Prototyping</h3><p class="font-body-sm text-on-surface-variant">Collaborating with industrial partners to prototype and demonstrate at industrial scale (~150V in EV battery packs), targeting a complete industrial prototype in 2–3 years.</p></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap justify-start md:justify-end shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">~150V EV Board</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">Industrial Validation</span></div></div></div></div></div></div></section>
-<!-- Status Section -->
-<!-- Commercialization -->
-<section class="py-xl relative border-t border-outline-variant bg-surface" id="market">
-<div class="max-w-6xl mx-auto px-4 md:px-8">
-<div class="mb-12 text-center md:text-left">
-  <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Commercialization Strategy</h2>
-  <p class="font-body-md text-on-surface-variant mt-4">Multi-channel market rollout, customer segmentation, and strategic industrial milestones.</p>
-</div>
-
-<!-- Commercialization Pillars Grid -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-  <!-- Market Analysis & Target Customers -->
-  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-    <div>
-      <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-primary text-2xl">pie_chart</span>
-        <h3 class="text-headline-md font-headline-md text-on-surface">Market Analysis</h3>
-      </div>
-      <p class="font-body-md text-on-surface-variant mb-4">
-        Directly benefits the battery and automotive industries by improving the operational reliability of EV batteries.
-      </p>
-      <div class="space-y-3 font-body-sm text-on-surface-variant">
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Standalone Product Buyers</strong>
-          Sold directly to battery companies, EV manufacturers (OEMs), and suppliers without in-house BMS teams.
-        </div>
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">IP &amp; Algorithm Licensing</strong>
-          Licensing core estimation models to customers across battery sectors who develop their own BMS hardware.
-        </div>
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Tier 2 Consulting Suppliers</strong>
-          Partners and buyers who provide engineering and consulting services on battery packs and BMS systems.
-        </div>
-      </div>
-    </div>
+  <div class="mb-12">
+    <h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Company &amp; Technology Highlights</h2>
+    <p class="font-body-md text-on-surface-variant mt-4">An executive snapshot of our patented state estimation architecture, product readiness, and funding progress.</p>
   </div>
 
-  <!-- Go-to-Market Plan -->
-  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-    <div>
-      <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
-        <h3 class="text-headline-md font-headline-md text-on-surface">Go-to-Market Plan</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Card 1: Tech & Solution -->
+    <a href="technology.html" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">memory</span>
       </div>
-      <p class="font-body-md text-on-surface-variant mb-4">
-        A structured, two-phase expansion approach to establish commercial traction and scale into high-volume manufacturing.
-      </p>
-      <div class="space-y-3 font-body-sm text-on-surface-variant">
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Phase 1: Initial Customer Focus</strong>
-          Prioritizing suppliers and EV battery manufacturers that lack in-house BMS development to prove and validate our commercial business model.
-        </div>
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Phase 2: OEM Scale &amp; Expansion</strong>
-          Expanding into major automotive OEMs for larger market share and high-volume deployment across production vehicle platforms.
-        </div>
-      </div>
-    </div>
-  </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Core Technology</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">Reimagines the entire battery pack as a single average model, distributing state estimation to each individual cell to reduce hardware and software complexity.</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
 
-  <!-- Short-Term Execution Plan -->
-  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-    <div>
-      <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-primary text-2xl">timeline</span>
-        <h3 class="text-headline-md font-headline-md text-on-surface">Short-Term Plan</h3>
+    <!-- Card 2: MVP Product -->
+    <a href="product.html" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">devices</span>
       </div>
-      <p class="font-body-md text-on-surface-variant mb-4">
-        A defined engineering and partnership timeline transitioning from laboratory validation to full automotive integration.
-      </p>
-      <div class="space-y-3 font-body-sm text-on-surface-variant">
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Current State (~15V)</strong>
-          Working lab-scale prototype with active algorithm enhancement over the next few months.
-        </div>
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Next 1–2 Years (~150V)</strong>
-          Collaborating with industrial partners to prototype and demonstrate in an industrial setting.
-        </div>
-        <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-          <strong class="text-on-surface block mb-1">Next 2–3 Years</strong>
-          Delivering a complete, verified industrial prototype for mass automotive integration.
-        </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Product (MVP)</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">A complete BMS device integrating hardware (MCU) and proprietary software algorithms for State of Charge (SoC), State of Health (SoH), and State of Power (SoP).</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">View Product <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
+
+    <!-- Card 3: TRL & Roadmap -->
+    <a href="technology.html#roadmap" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">speed</span>
       </div>
-    </div>
-  </div>
-</div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">TRL 3 to TRL 4</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">Currently validated with a ~15V lab-scale prototype. Actively advancing toward ~150V industrial-scale prototyping and testing in EV battery packs.</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">View Roadmap <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
 
-<!-- Business Model Summary -->
-<div class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-  <div class="flex items-center gap-4">
-    <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center border border-outline-variant shrink-0">
-      <span class="material-symbols-outlined text-primary text-2xl">storefront</span>
-    </div>
-    <div>
-      <h4 class="font-headline-md text-on-surface font-bold">Dual Revenue Model</h4>
-      <p class="font-body-sm text-on-surface-variant">Flexible monetization through complete BMS hardware/software product sales or core algorithm IP licensing.</p>
-    </div>
-  </div>
-  <a href="mailto:jchenee2015@gmail.com" class="shrink-0 px-6 py-3 bg-primary text-white rounded font-bold font-body-sm hover:bg-inverse-surface transition-colors shadow-sm inline-flex items-center gap-2">
-    <span class="material-symbols-outlined text-sm">handshake</span>
-    Partner With Us
-  </a>
-</div>
+    <!-- Card 4: Commercialization -->
+    <a href="commercialization.html" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">storefront</span>
+      </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Commercial Strategy</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">Targeting suppliers and battery companies without in-house BMS before scaling to major OEMs. Offering both direct device sales and algorithm licensing.</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">Explore Strategy <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
 
+    <!-- Card 5: Team -->
+    <a href="team.html" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">groups</span>
+      </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Leadership Team</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">Led by Jun Chen (Technical Lead), Luke Nuculaj (Business Co-Lead), and Ali Irshayyid (Business Co-Lead) from Oakland University.</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">Meet the Team <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
+
+    <!-- Card 6: Funding & IP -->
+    <a href="milestones.html" class="bg-white border border-outline-variant rounded-xl p-6 shadow-sm hover:border-primary transition-all group block">
+      <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4 border border-outline-variant group-hover:border-primary transition-colors">
+        <span class="material-symbols-outlined text-primary text-2xl">verified</span>
+      </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-2">Funding &amp; IP Status</h3>
+      <p class="font-body-sm text-on-surface-variant mb-4">Over $800k in non-dilutive grant funding secured. Provisional patent filed (Serial No. 63/795,912) with utility patent in process.</p>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1">View Milestones <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+    </a>
+  </div>
 </div>
 </section>
-<!-- Leadership Team -->
-<section class="py-xl relative border-t border-outline-variant grid-pattern" id="team">
-<div class="absolute inset-0 bg-surface-container-lowest/90"></div>
-<div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-<h2 class="text-headline-lg font-headline-lg text-on-surface mb-12 border-b border-outline-variant pb-4 inline-block">Leadership Team</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Jun Chen -->
-<div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl"><div class="w-20 h-20 bg-surface rounded-full mb-4 border border-outline-variant flex items-center justify-center"><span class="text-2xl font-bold text-primary">JC</span></div><h3 class="text-headline-md font-headline-md text-on-surface">Jun Chen</h3><p class="text-xs font-bold tracking-wider text-primary uppercase mb-2">Technical Lead</p><p class="font-body-sm text-on-surface-variant">Associate professor at Oakland University with extensive experience in automotive industry, national lab, and academia.</p></div>
-<!-- Luke Nuculaj -->
-<div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl"><div class="w-20 h-20 bg-surface rounded-full mb-4 border border-outline-variant flex items-center justify-center"><span class="text-2xl font-bold text-primary">LN</span></div><h3 class="text-headline-md font-headline-md text-on-surface">Luke Nuculaj</h3><p class="text-xs font-bold tracking-wider text-primary uppercase mb-2">Business Co-Lead</p><p class="font-body-sm text-on-surface-variant">PhD student at Oakland University, with research focusing on state estimation, Kalman filter, and battery management systems.</p></div>
-<!-- Ali Irshayyid -->
-<div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl"><div class="w-20 h-20 bg-surface rounded-full mb-4 border border-outline-variant flex items-center justify-center"><span class="text-2xl font-bold text-primary">AI</span></div><h3 class="text-headline-md font-headline-md text-on-surface">Ali Irshayyid</h3><p class="text-xs font-bold tracking-wider text-primary uppercase mb-2">Business Co-Lead</p><p class="font-body-sm text-on-surface-variant">Postdoc researcher at Oakland University, with research focusing on state AI, LLM, and battery management systems.</p></div>
-</div>
-</div>
-</section>
-<!-- Funding & IP -->
-<section class="py-xl relative border-t border-outline-variant bg-surface">
+
+<!-- Call to Action Banner -->
+<section class="py-16 border-t border-outline-variant bg-white">
 <div class="max-w-6xl mx-auto px-4 md:px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-  <!-- Current Assets / Milestones Reached -->
-  <div class="lg:col-span-7 flex flex-col gap-8">
-    <div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm h-full">
-      <div class="flex items-center gap-3 mb-8">
-        <span class="material-symbols-outlined text-blue-600 text-3xl">verified</span>
-        <h2 class="text-headline-lg font-headline-lg text-on-surface">Financial &amp; IP Milestones</h2>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Funding Secured -->
-        <div class="flex flex-col gap-2">
-          <div class="flex items-center gap-2 text-blue-600">
-            <span class="material-symbols-outlined">monetization_on</span>
-            <span class="text-xs font-bold uppercase tracking-wider">Funding to Date</span>
-          </div>
-          <div>
-            <div class="text-display font-display text-primary mb-2">$800k+</div>
-            <p class="font-body-md text-on-surface-variant mb-0">Over <strong class="text-on-surface">$800k</strong> secured to date to develop our sensor-lean technology:<details class="mt-4 group cursor-pointer"><summary class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1 list-none"><span class="">View Grant Details</span><span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span></summary><ul class="mt-3 space-y-2 text-xs leading-tight border-l-2 border-blue-600/20 pl-3 py-1"><li class="">• National Science Foundation through VentureWell (05/2026–04/2027): $50k (~$10k remains)</li><li class="">• National Science Foundation (01/2023–12/2027): ~$555k (~$300k remains)</li><li class="">• MTRAC-Transportation (09/2024–08/2026): ~$240k (All spent)</li><li class="">• Advance Proof-of-Concept Fund (MSU subaward, 01/2024–12/2024): $40k (All spent)</li></ul></details></p>
-          </div>
-        </div>
-
-        <!-- IP Status -->
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-2 text-blue-600">
-            <span class="material-symbols-outlined">gavel</span>
-            <span class="text-xs font-bold uppercase tracking-wider">Intellectual Property</span>
-          </div>
-          <div>
-            <div class="text-headline-lg font-headline-lg text-on-surface mb-2">Patent Pending</div>
-            <p class="font-body-md text-on-surface-variant mb-2">
-              Provisional Patent Application filed in <strong>April 2025</strong> (Serial No. <strong class="text-on-surface font-mono text-sm font-semibold">63/795,912</strong>) for sensor-lean SoC estimation.
-            </p>
-            <p class="font-body-sm text-on-surface-variant">
-              In the process of filing a utility patent with additional findings on State of Health (SoH) and State of Power (SoP) estimation.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="bg-blue-50 border-2 border-blue-600/20 p-8 md:p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-8">
+    <div>
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-2">Industrial Validation Round</span>
+      <h3 class="text-headline-lg font-headline-lg text-on-surface text-2xl md:text-3xl font-bold mb-3">Partner with SlimBatt</h3>
+      <p class="font-body-md text-on-surface-variant max-w-xl">We are seeking ~$600k and industrial partners to validate our 150V board in EV battery packs over the next 1–2 years.</p>
     </div>
+    <a href="contact.html" class="px-8 py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-inverse-surface transition-colors shadow-sm shrink-0 flex items-center gap-2">
+      <span class="material-symbols-outlined">mail</span>
+      Get in Touch
+    </a>
   </div>
-
-  <!-- Investment Opportunity / Funding Needs -->
-  <div class="lg:col-span-5">
-    <div class="bg-blue-50 border-2 border-blue-600/20 p-8 rounded-xl shadow-md h-full flex flex-col justify-between">
-      <div>
-        <div class="flex items-center gap-2 text-blue-600 mb-6">
-          <span class="material-symbols-outlined">trending_up</span>
-          <span class="text-xs font-bold uppercase tracking-wider">Funding Needs &amp; Plan</span>
-        </div>
-        <h3 class="text-headline-lg font-headline-lg text-on-surface mb-4">Industrial Prototyping</h3>
-        <p class="font-body-md text-on-surface-variant mb-4">
-          Seeking <strong class="text-on-surface">~$600k</strong> to conduct validation in an industrial setting, testing the technology in EV battery packs (~150 volts) over the next 1–2 years.
-        </p>
-        <p class="font-body-sm text-on-surface-variant mb-8">
-          The team is also actively applying for <strong>NSF SBIR</strong> funding for prototyping.
-        </p>
-      </div>
-      <button class="w-full py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-inverse-surface transition-colors shadow-sm flex items-center justify-center gap-2">
-        <span class="material-symbols-outlined">mail</span>
-        Inquire About Investment
-      </button>
-    </div>
-  </div>
-</div>
 </div>
 </section>
 </main>
+
 <!-- Footer -->
 <footer class="w-full py-12 bg-surface-container-low border-t border-outline-variant">
 <div class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
-<div class="flex flex-wrap gap-6 justify-center">
-<a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="#">Intellectual Property</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="#">Funding Disclosure</a>
-</div>
-<div class="font-body-sm text-on-surface-variant text-center md:text-right">
-                © SlimBatt LLC. All rights reserved.<br>Sensor-lean BMS Technology.
-            </div>
+  <div class="text-center md:text-left">
+    <div class="font-bold text-on-surface text-lg">SlimBatt LLC</div>
+    <div class="text-xs text-on-surface-variant">Sensor-Lean BMS Technology</div>
+  </div>
+  <div class="flex flex-wrap gap-6 justify-center">
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="technology.html">Technology</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="product.html">Product</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="commercialization.html">Commercialization</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="team.html">Team</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="milestones.html">Funding &amp; IP</a>
+    <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="contact.html">Contact</a>
+  </div>
+  <div class="font-body-sm text-on-surface-variant text-center md:text-right">
+    © SlimBatt LLC. All rights reserved.<br>Contact: <a href="mailto:jchenee2015@gmail.com" class="underline">jchenee2015@gmail.com</a>
+  </div>
 </div>
 </footer>
 
-
-
-
-</body></html>
+</body>
+</html>
