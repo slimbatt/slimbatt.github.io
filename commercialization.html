@@ -112,87 +112,116 @@
 </div>
 </section>
 
-<!-- Strategy Pillars -->
+<!-- Strategy Pillars (Horizontal Layout) -->
 <section class="py-16 bg-white border-b border-outline-variant">
-<div class="max-w-6xl mx-auto px-4 md:px-8">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-    <!-- Market Analysis -->
-    <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
+<div class="max-w-6xl mx-auto px-4 md:px-8 space-y-8">
+
+  <!-- Pillar 1: Market Analysis (Horizontal) -->
+  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col md:flex-row gap-8 items-start hover:border-primary transition-colors">
+    <div class="w-full md:w-1/3 shrink-0">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center border border-outline-variant">
           <span class="material-symbols-outlined text-primary text-2xl">pie_chart</span>
-          <h3 class="text-headline-md font-headline-md text-on-surface">Market Analysis</h3>
         </div>
-        <p class="font-body-md text-on-surface-variant mb-6">
-          The proposed technology will directly benefit the battery and automotive industries by improving the reliability of EV batteries.
-        </p>
-        <div class="space-y-4 font-body-sm text-on-surface-variant">
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Standalone Product Sales</strong>
-            Sold directly as a standalone product to battery companies, OEMs, and suppliers who do not design BMS in-house.
-          </div>
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Core Tech Licensing</strong>
-            Licensed to potential customers in different battery sectors where customers design in-house BMS themselves.
-          </div>
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Tier 2 Suppliers</strong>
-            Tier 2 suppliers who provide consulting services on battery and BMS could also be potential buyers.
-          </div>
-        </div>
+        <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Market Analysis</h3>
       </div>
+      <p class="font-body-md text-on-surface-variant leading-relaxed">
+        The proposed technology will directly benefit the battery and automotive industries by improving the reliability of EV batteries.
+      </p>
     </div>
 
-    <!-- Go-to-Market Plan -->
-    <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
-          <h3 class="text-headline-md font-headline-md text-on-surface">Go-to-Market Plan</h3>
-        </div>
-        <p class="font-body-md text-on-surface-variant mb-6">
-          A phased customer adoption model designed to validate commercial viability before scaling to high-volume production.
-        </p>
-        <div class="space-y-4 font-body-sm text-on-surface-variant">
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Phase 1: Component Suppliers</strong>
-            Focus initially on suppliers and EV battery companies who do not design their in-house BMS to develop a viable business model.
-          </div>
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Phase 2: OEM Scale</strong>
-            Target expansion towards major automotive OEMs for larger market share and vehicle platform integration.
-          </div>
+    <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Segment 01</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">Standalone Product Sales</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Sold directly as a standalone product to battery companies, OEMs, and suppliers who do not design BMS in-house.</p>
         </div>
       </div>
-    </div>
-
-    <!-- Short-Term Plan -->
-    <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col justify-between">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="material-symbols-outlined text-primary text-2xl">timeline</span>
-          <h3 class="text-headline-md font-headline-md text-on-surface">Short-Term Plan</h3>
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Segment 02</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">Core Tech Licensing</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Licensed to potential customers in different battery sectors where customers design in-house BMS themselves.</p>
         </div>
-        <p class="font-body-md text-on-surface-variant mb-6">
-          A clearly defined engineering and industrial demonstration timeline:
-        </p>
-        <div class="space-y-4 font-body-sm text-on-surface-variant">
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Current State (~15V)</strong>
-            Working lab-scale prototype with software enhancements scheduled over the next few months.
-          </div>
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Next 1–2 Years (~150V)</strong>
-            Collaborate with industrial partners to prototype and demonstrate in an industrial setting.
-          </div>
-          <div class="p-3 bg-surface rounded-lg border border-outline-variant/60">
-            <strong class="text-on-surface block mb-1">Next 2–3 Years</strong>
-            Deliver a working industrial prototype for commercial deployment.
-          </div>
+      </div>
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Segment 03</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">Tier 2 Suppliers</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Tier 2 suppliers who provide consulting services on battery and BMS could also be potential buyers.</p>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Pillar 2: Go-to-Market Plan (Horizontal) -->
+  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col md:flex-row gap-8 items-start hover:border-primary transition-colors">
+    <div class="w-full md:w-1/3 shrink-0">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center border border-outline-variant">
+          <span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
+        </div>
+        <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Go-to-Market Plan</h3>
+      </div>
+      <p class="font-body-md text-on-surface-variant leading-relaxed">
+        A phased customer adoption model designed to validate commercial viability before scaling to high-volume production.
+      </p>
+    </div>
+
+    <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="p-5 bg-surface rounded-lg border border-outline-variant/60">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Initial Target Phase</span>
+        <strong class="text-on-surface block text-sm font-bold mb-2">Phase 1: Component Suppliers</strong>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Focus initially on suppliers and EV battery companies who do not design their in-house BMS to develop a viable business model.</p>
+      </div>
+      <div class="p-5 bg-surface rounded-lg border border-outline-variant/60">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Scaling Phase</span>
+        <strong class="text-on-surface block text-sm font-bold mb-2">Phase 2: OEM Scale</strong>
+        <p class="text-xs text-on-surface-variant leading-relaxed">Target expansion towards major automotive OEMs for larger market share and vehicle platform integration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pillar 3: Short-Term Plan (Horizontal) -->
+  <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl flex flex-col md:flex-row gap-8 items-start hover:border-primary transition-colors">
+    <div class="w-full md:w-1/3 shrink-0">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-10 h-10 bg-surface rounded-full flex items-center justify-center border border-outline-variant">
+          <span class="material-symbols-outlined text-primary text-2xl">timeline</span>
+        </div>
+        <h3 class="text-headline-md font-headline-md text-on-surface text-xl font-bold">Short-Term Plan</h3>
+      </div>
+      <p class="font-body-md text-on-surface-variant leading-relaxed">
+        A clearly defined engineering and industrial demonstration timeline:
+      </p>
+    </div>
+
+    <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">Current State</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">~15V Lab Prototype</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Working lab-scale prototype with software enhancements scheduled over the next few months.</p>
+        </div>
+      </div>
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">1–2 Years</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">~150V Partner Testing</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Collaborate with industrial partners to prototype and demonstrate in an industrial setting.</p>
+        </div>
+      </div>
+      <div class="p-4 bg-surface rounded-lg border border-outline-variant/60 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-1">2–3 Years</span>
+          <strong class="text-on-surface block text-sm font-bold mb-2">Industrial Prototype</strong>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Deliver a working industrial prototype ready for full commercial deployment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 </section>
 
