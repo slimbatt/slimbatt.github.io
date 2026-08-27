@@ -206,7 +206,7 @@
 <span class="text-primary">BMS Technology</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-                        Our technology reduces dependency on onboard voltage sensors. Hardware and wiring represent 5-10% of battery cost. We replace these with advanced algorithms.
+                        Electric vehicle battery management systems rely heavily on onboard voltage sensors, creating reliability concerns when sensors fail. SlimBatt reduces dependency on onboard sensors by combining hardware sensor reduction with simplified state estimation algorithms—retaining accuracy while cutting complexity.
                     </p>
 <div class="flex gap-4 mt-4">
 <button class="px-6 py-3 text-white font-body-sm rounded font-semibold hover:bg-inverse-surface transition-colors shadow-sm bg-blue-600">Explore the Tech</button>
@@ -233,11 +233,11 @@
 <ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
-<span class="">Batteries need individual sensors for each cell. This adds hardware and software complexity.</span>
+<span class="">Relying on onboard voltage sensors for every cell decreases BMS reliability when sensors fail and increases computational load.</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-error/80 text-lg mt-0.5">close</span>
-<span class="">More sensors mean more cost, space requirements, and more failure points.</span>
+<span class="">Existing literature typically reduces either hardware complexity or software complexity, but rarely addresses both together.</span>
 </li>
 </ul>
 </div>
@@ -251,11 +251,11 @@
 <ul class="space-y-4 font-body-md text-on-surface-variant relative z-10">
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
-<span class="text-on-surface font-medium">Instead of measuring every cell, we measure strings of cells.</span>
+<span class="text-on-surface font-medium">Reimagines the entire battery pack as a single "average" model, estimates state over the average model, and distributes the estimate to each cell.</span>
 </li>
 <li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-lg mt-0.5 text-blue-600">check</span>
-<span class="text-on-surface font-medium">We use an "average model" to estimate individual cell conditions via advanced algorithms.</span>
+<span class="text-on-surface font-medium">Simultaneously reduces sensor count and algorithm complexity, increasing fault tolerance and reducing development overhead.</span>
 </li>
 </ul>
 </div>
@@ -266,10 +266,10 @@
 <section class="py-xl relative border-t border-outline-variant bg-surface" id="product">
 <div class="max-w-6xl mx-auto px-4 md:px-8">
 <div class="mb-12 text-center md:text-left">
-<h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Product/Service (MVP)</h2>
+<h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Product &amp; Service (MVP)</h2>
 </div>
 <div class="bg-white border border-outline-variant shadow-sm p-8 rounded-xl">
-<p class="font-body-md text-on-surface-variant mb-6">Our product is a microcontroller unit (MCU) embedded with our proprietary algorithms. These algorithms perform core BMS functions:</p>
+<p class="font-body-md text-on-surface-variant mb-6">SlimBatt provides a complete battery management system device integrating hardware and software. Our Minimum Viable Product (MVP) includes a microcontroller unit with embedded algorithms for:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
   <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-xl shadow-sm flex flex-col items-center text-center group hover:border-primary transition-colors">
     <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center mb-4">
@@ -293,27 +293,27 @@
     <p class="text-sm text-on-surface-variant font-medium">(SoP)</p>
   </div>
 </div>
-<p class="font-body-md text-on-surface-variant mt-6">This setup requires fewer voltage sensors while maintaining performance and safety.</p>
+<p class="font-body-md text-on-surface-variant mt-6">Our technology reduces the required number of onboard sensors without compromising BMS functionality, delivering higher reliability and cost-effectiveness.</p>
 </div>
 </div>
-</section><section class="py-xl relative border-t border-outline-variant bg-surface" id="roadmap"><div class="max-w-6xl mx-auto px-4 md:px-8"><div class="mb-12 text-center md:text-left"><h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Technology Roadmap</h2><p class="font-body-md text-on-surface-variant mt-4">Strategic pathway from prototype to mass commercialization.</p></div><div class="relative pl-8 md:pl-0"><div class="hidden md:block absolute left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2"></div><div class="md:hidden absolute left-3 top-0 bottom-0 timeline-line"></div><div class="space-y-12"><div class="relative flex flex-col md:flex-row items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 z-10 md:-translate-x-1/2 shadow-sm border-blue-600"></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider uppercase mb-1 text-blue-600">Current Phase</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 3: Proof of Concept</h3><p class="font-body-sm text-on-surface-variant">Working lab-scale prototype. Validated algorithms in controlled environment and initial MCU architecture defined.</p></div><div class="w-full md:w-5/12 pl-0 md:pl-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">Lab Validated</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">Algorithm Core Complete</span></div></div></div><div class="relative flex flex-col md:flex-row-reverse items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-outline-variant z-10 md:-translate-x-1/2 group-hover:border-primary transition-colors"></div><div class="w-full md:w-5/12 text-left pl-0 md:pl-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider text-on-surface-variant uppercase mb-1">Next Milestone</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 4: Industrial Validation</h3><p class="font-body-sm text-on-surface-variant">Industrial scale prototyping and validation. Integration of hardware and software components for automotive standards compliance.</p></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap justify-start md:justify-end shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">Hardware Int.</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">ISO 26262 Prep</span></div></div></div></div></div></div></section>
+</section><section class="py-xl relative border-t border-outline-variant bg-surface" id="roadmap"><div class="max-w-6xl mx-auto px-4 md:px-8"><div class="mb-12 text-center md:text-left"><h2 class="text-headline-lg font-headline-lg text-on-surface border-b border-outline-variant pb-4 inline-block">Technology Readiness &amp; Roadmap</h2><p class="font-body-md text-on-surface-variant mt-4">Structured pathway from working lab prototype to full industrial validation.</p></div><div class="relative pl-8 md:pl-0"><div class="hidden md:block absolute left-1/2 top-0 bottom-0 timeline-line -translate-x-1/2"></div><div class="md:hidden absolute left-3 top-0 bottom-0 timeline-line"></div><div class="space-y-12"><div class="relative flex flex-col md:flex-row items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 z-10 md:-translate-x-1/2 shadow-sm border-blue-600"></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider uppercase mb-1 text-blue-600">Current Phase</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 3: Lab-Scale Prototype</h3><p class="font-body-sm text-on-surface-variant">Working low-voltage prototype (~15V) with validated state estimation algorithms. Software enhancements underway over the next few months.</p></div><div class="w-full md:w-5/12 pl-0 md:pl-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">~15V Lab Prototype</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface">Validated Algorithms</span></div></div></div><div class="relative flex flex-col md:flex-row-reverse items-center justify-between group"><div class="absolute left-[-2rem] md:left-1/2 w-4 h-4 rounded-full bg-white border-2 border-outline-variant z-10 md:-translate-x-1/2 group-hover:border-primary transition-colors"></div><div class="w-full md:w-5/12 text-left pl-0 md:pl-8 mb-4 md:mb-0"><h4 class="text-xs font-bold tracking-wider text-on-surface-variant uppercase mb-1">Next Milestone (1–2 Years)</h4><h3 class="text-2xl font-bold text-on-surface mb-2">TRL 4: Industrial Prototyping</h3><p class="font-body-sm text-on-surface-variant">Collaborating with industrial partners to prototype and demonstrate at industrial scale (~150V in EV battery packs), targeting a complete industrial prototype in 2–3 years.</p></div><div class="w-full md:w-5/12 text-left md:text-right pr-0 md:pr-8"><div class="bg-white border border-outline-variant p-4 rounded-lg flex gap-2 flex-wrap justify-start md:justify-end shadow-sm"><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">~150V EV Board</span><span class="bg-surface px-2 py-1 rounded text-xs font-bold text-on-surface-variant">Industrial Validation</span></div></div></div></div></div></div></section>
 <!-- Status Section -->
 <!-- Commercialization -->
 <section class="py-xl relative border-t border-outline-variant bg-surface" id="market">
 <div class="max-w-6xl mx-auto px-4 md:px-8">
-<h2 class="text-headline-lg font-headline-lg text-on-surface mb-12 text-center">Commercialization</h2>
+<h2 class="text-headline-lg font-headline-lg text-on-surface mb-12 text-center">Commercialization Strategy</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl hover:border-primary transition-colors">
 <h3 class="text-headline-md font-headline-md text-on-surface mb-3 border-b border-outline-variant pb-2">Market Analysis</h3>
-<p class="font-body-md text-on-surface-variant">Target customers include EV manufacturers (OEMs), battery pack manufacturers, and Tier 1 BMS suppliers. The value proposition is cost reduction and simplification of the battery pack architecture.</p>
+<p class="font-body-md text-on-surface-variant">Standalone BMS product sales to battery companies, OEMs, and suppliers without in-house BMS. Core technology licensing for sectors designing BMS in-house, with Tier 2 consulting suppliers as additional potential buyers.</p>
 </div>
 <div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl hover:border-primary transition-colors">
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 border-b border-outline-variant pb-2">Go-to Market Plan</h3>
-<p class="font-body-md text-on-surface-variant">B2B licensing model or direct component sales (selling the programmed MCU). Initial focus on pilot projects with early adopters to validate the technology in real-world scenarios.</p>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-3 border-b border-outline-variant pb-2">Go-to-Market Plan</h3>
+<p class="font-body-md text-on-surface-variant">Initial focus on suppliers and EV battery companies that do not design in-house BMS to establish a commercial model, followed by expansion toward OEMs for larger market share.</p>
 </div>
 <div class="bg-white border border-outline-variant shadow-sm p-6 rounded-xl hover:border-primary transition-colors">
-<h3 class="text-headline-md font-headline-md text-on-surface mb-3 border-b border-outline-variant pb-2">Short-term Plan</h3>
-<p class="font-body-md text-on-surface-variant">Scale up from 15V lab scale to 150V. We are planning to build hardware for industrial validation.</p>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-3 border-b border-outline-variant pb-2">Short-Term Plan</h3>
+<p class="font-body-md text-on-surface-variant">Enhance software in the next few months, collaborate with industrial partners to demonstrate at ~150V over the next 1–2 years, and deliver a working industrial prototype in 2–3 years.</p>
 </div>
 </div>
 </div>
@@ -350,13 +350,11 @@
         <div class="flex flex-col gap-2">
           <div class="flex items-center gap-2 text-blue-600">
             <span class="material-symbols-outlined">monetization_on</span>
-            <span class="text-xs font-bold uppercase tracking-wider">Funding Secured</span>
+            <span class="text-xs font-bold uppercase tracking-wider">Funding to Date</span>
           </div>
           <div>
             <div class="text-display font-display text-primary mb-2">$800k+</div>
-            <p class="font-body-md text-on-surface-variant mb-0">We have&nbsp;<i><span style="font-size:11.0pt;line-height:115%;
-font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:Arial;color:#222222;
-mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:EN-US">secured&nbsp;</span></i>over <strong class="text-on-surface">$800k</strong> in funding:<details class="mt-4 group cursor-pointer"><summary class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1 list-none"><span class="">View Grant Details</span><span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span></summary><ul class="mt-3 space-y-2 text-xs leading-tight border-l-2 border-blue-600/20 pl-3 py-1"><li class="">• National Science Foundation through VentureWell (05/2026-04/2027): $50k ($10k remains)</li><li class="">• National Science Foundation (01/2023–12/2027): ~$555k ($300k remains)</li><li class="">• MTRAC-Transportation (09/2024–08/2026): ~$240k (All spent)</li><li class="">• Advance Proof-of-Concept Fund (subaward from MSU, 01/2024–12/2024): $40k (All spent)</li></ul></details></p>
+            <p class="font-body-md text-on-surface-variant mb-0">Over <strong class="text-on-surface">$800k</strong> secured to date to develop our sensor-lean technology:<details class="mt-4 group cursor-pointer"><summary class="text-xs font-bold text-blue-600 uppercase tracking-wider flex items-center gap-1 list-none"><span class="">View Grant Details</span><span class="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span></summary><ul class="mt-3 space-y-2 text-xs leading-tight border-l-2 border-blue-600/20 pl-3 py-1"><li class="">• National Science Foundation through VentureWell (05/2026–04/2027): $50k (~$10k remains)</li><li class="">• National Science Foundation (01/2023–12/2027): ~$555k (~$300k remains)</li><li class="">• MTRAC-Transportation (09/2024–08/2026): ~$240k (All spent)</li><li class="">• Advance Proof-of-Concept Fund (MSU subaward, 01/2024–12/2024): $40k (All spent)</li></ul></details></p>
           </div>
         </div>
 
@@ -364,12 +362,15 @@ mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:EN-US">secu
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-2 text-blue-600">
             <span class="material-symbols-outlined">gavel</span>
-            <span class="text-xs font-bold uppercase tracking-wider">IP Status</span>
+            <span class="text-xs font-bold uppercase tracking-wider">Intellectual Property</span>
           </div>
           <div>
             <div class="text-headline-lg font-headline-lg text-on-surface mb-2">Patent Pending</div>
-            <p class="font-body-md text-on-surface-variant">
-              Provisional patent filed: Serial No. <strong class="text-on-surface font-mono text-sm font-semibold">63/795,912</strong>.
+            <p class="font-body-md text-on-surface-variant mb-2">
+              Provisional Patent Application filed in <strong>April 2025</strong> (Serial No. <strong class="text-on-surface font-mono text-sm font-semibold">63/795,912</strong>) for sensor-lean SoC estimation.
+            </p>
+            <p class="font-body-sm text-on-surface-variant">
+              In the process of filing a utility patent with additional findings on State of Health (SoH) and State of Power (SoP) estimation.
             </p>
           </div>
         </div>
@@ -383,11 +384,14 @@ mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:EN-US">secu
       <div>
         <div class="flex items-center gap-2 text-blue-600 mb-6">
           <span class="material-symbols-outlined">trending_up</span>
-          <span class="text-xs font-bold uppercase tracking-wider">Investment Opportunity</span>
+          <span class="text-xs font-bold uppercase tracking-wider">Funding Needs &amp; Plan</span>
         </div>
-        <h3 class="text-headline-lg font-headline-lg text-on-surface mb-4">Future Milestone</h3>
-        <p class="font-body-md text-on-surface-variant mb-8">
-          We are seeking <strong class="text-on-surface">~$600k</strong> to build a 150V board for industrial validation over the next 1-2 years.
+        <h3 class="text-headline-lg font-headline-lg text-on-surface mb-4">Industrial Prototyping</h3>
+        <p class="font-body-md text-on-surface-variant mb-4">
+          Seeking <strong class="text-on-surface">~$600k</strong> to conduct validation in an industrial setting, testing the technology in EV battery packs (~150 volts) over the next 1–2 years.
+        </p>
+        <p class="font-body-sm text-on-surface-variant mb-8">
+          The team is also actively applying for <strong>NSF SBIR</strong> funding for prototyping.
         </p>
       </div>
       <button class="w-full py-4 bg-blue-600 text-white rounded-lg font-bold hover:bg-inverse-surface transition-colors shadow-sm flex items-center justify-center gap-2">
@@ -410,7 +414,7 @@ mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:EN-US">secu
 <a class="font-body-sm text-on-surface-variant hover:text-primary font-semibold transition-colors" href="#">Funding Disclosure</a>
 </div>
 <div class="font-body-sm text-on-surface-variant text-center md:text-right">
-                © 2024 SlimBatt LLC. All rights reserved.<br>Sensor-lean BMS Technology.
+                © SlimBatt LLC. All rights reserved.<br>Sensor-lean BMS Technology.
             </div>
 </div>
 </footer>
