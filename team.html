@@ -85,9 +85,9 @@
 <body class="font-body-md text-on-surface bg-surface-container-lowest antialiased selection:bg-blue-600 selection:text-white">
 
 <!-- Navigation -->
-<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-outline-variant shadow-sm">
 <div class="flex justify-between items-center max-w-6xl mx-auto px-4 md:px-8 h-20">
-<a href="index.html" class="font-headline-lg text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface">SlimBatt LLC</a>
+<a href="index.html" class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface">SlimBatt LLC</a>
 <nav class="hidden md:flex space-x-6">
   <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="index.html">Home</a>
   <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="technology.html">Technology</a>
@@ -97,6 +97,44 @@
   <a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors font-semibold" href="milestones.html">Funding &amp; IP</a>
 </nav>
 <a href="contact.html" class="font-body-sm px-4 py-2 bg-primary text-white rounded hover:bg-inverse-surface transition-colors font-medium hidden md:inline-block">Contact Us</a>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-on-surface hover:bg-surface border border-outline-variant flex items-center justify-center">
+  <span id="menu-icon" class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-outline-variant px-4 py-6 shadow-lg">
+  <div class="flex flex-col space-y-3">
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="index.html">
+      <span>Home</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="technology.html">
+      <span>Technology</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="product.html">
+      <span>Product</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="commercialization.html">
+      <span>Commercialization</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-primary font-bold bg-surface p-3 rounded-lg flex items-center justify-between" href="team.html">
+      <span>Team</span>
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+    <a class="font-body-md text-on-surface hover:text-primary hover:bg-surface p-3 rounded-lg font-semibold transition-colors flex items-center justify-between" href="milestones.html">
+      <span>Funding &amp; IP</span>
+      <span class="material-symbols-outlined text-sm text-outline">arrow_forward</span>
+    </a>
+    <a class="w-full text-center py-3 bg-primary text-white font-bold rounded-lg shadow-sm block mt-2" href="contact.html">
+      Contact Us
+    </a>
+  </div>
 </div>
 </header>
 
@@ -191,6 +229,23 @@
   </div>
 </div>
 </footer>
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
 
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.textContent = 'close';
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.textContent = 'menu';
+      }
+    });
+  }
+</script>
 </body>
 </html>
